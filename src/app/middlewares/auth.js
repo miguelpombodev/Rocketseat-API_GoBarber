@@ -22,5 +22,6 @@ export default async (req, res, next) => {
     return res.status(401).json({ error: 'Token Invalid!' });
   }
 
+  // eslint-disable-next-line no-unreachable
   return next();
 };
